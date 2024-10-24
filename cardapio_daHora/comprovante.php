@@ -70,5 +70,5 @@ if(isset($_POST["opcao12"])){
 echo "Pedido realizado com sucesso!<br>";
 echo "Sua conta ficou em R$ ", number_format($valorFinal,"2");
 echo "<br> Obs: ", $obs;
-echo "<br><a href='cardapio.html'>Voltar</a>";
+echo "<br><a href='index.html'>Voltar</a>";
 ?>
