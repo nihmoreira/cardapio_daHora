@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="Icon" href="logo lanches daHora.png"> 
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <div class="container">
+        <h2>DaHora Lanches</h2>
+
+        <form action="comprovante.php" method="post">
+            <fieldset>
+                    <table id="lanches">
+                        <tr>
+                            <th>Lanches</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao1">X-Burguer</td>
+                            <td>
+                                <select name="quantidade1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 13,50</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao2">X-Salada</td>
+                            <td>
+                                <select name="quantidade2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 15,60</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao3">X-Bacon</td>
+                            <td>
+                                <select name="quantidade3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 19,50</td>
+                        </tr>
+
+                    </table>
+                <br>
+                    <table id="bebidas">
+                        <tr>
+                            <th>Bebidas</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao4">Água</td>
+                            <td>
+                                <select name="qtd_bebida1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 3,00</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao5">Coca-Cola</td>
+                            <td>
+                                <select name="qtd_bebida2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 5,80</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao6">Suco de Laranja</td>
+                            <td>
+                                <select name="qtd_bebida3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 5,99</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table id="porcoes">
+                        <tr>
+                            <th>Porções</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao7">Batata Frita</td>
+                            <td>
+                                <select name="p1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 18,00</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao8">Nuggets</td>
+                            <td>
+                                <select name="p2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 25,70</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao9">Onion Rings</td>
+                            <td>
+                                <select name="p3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 20,90</td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <table id="doces">
+                        <tr>
+                            <th>Sobremesas</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao10">Sorvete</td>
+                            <td>
+                                <select name="d1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 7,00</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao11">Petit Gateau</td>
+                            <td>
+                                <select name="d2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 14,99</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="opcao12">Fondue</td>
+                            <td>
+                                <select name="d3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                            <td>R$ 20,80</td>
+                        </tr>
+
+                    </table>
+                    <br><br>
+                <label><strong>Observações:</strong></label>
+                <br><br>
+                <textarea name="obs"></textarea>
+
+                <br><br>
+                <input type="submit" value="Enviar Pedido">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

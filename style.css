@@ -1,0 +1,47 @@
+
+h2{
+    background-color: #b53629;
+    height: 50px;
+
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;}
+
+fieldset{
+    width: 35%;
+    margin-left: 30%;
+    border-radius: 20px;
+    border: 0.1px solid #b53629;
+    box-shadow: 1px 1px 1px #b53629;
+    padding: 2%;
+}
+table { 
+    width: 100%; 
+} 
+ th, td { 
+    padding: 8px; 
+}
+ th, label{ 
+    color: #b53629;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+textarea{
+    border: 1px solid #b53629;
+    border-radius: 6px;
+    width: 300px;
+    height: 70px;
+}
+
+input{
+    background-color: #b53629;
+    border-radius: 4px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #e1daca;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+  
